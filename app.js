@@ -6,7 +6,7 @@ config();
 const app = express();
 
 
-DBconnect();
+await DBconnect();
 
 app.listen(process.env.Port || 3001, () => {
   console.log("SERVER IS ONLINE");
